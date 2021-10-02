@@ -1,9 +1,9 @@
-function printMasElements(inputMas) {
-  for (let i = 0; i < inputMas.length; i += 1) {
-    console.log(inputMas[i]);
+function printArrayElements(inputArray) {
+  for (let i = 0; i < inputArray.length; i += 1) {
+    console.log(inputArray[i]);
   }
-  console.log(inputMas.length);
+  console.log(inputArray.length);
   return null;
 }
 
-module.exports = printMasElements;
+module.exports = printArrayElements;

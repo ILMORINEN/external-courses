@@ -1,8 +1,8 @@
-function dublicateValuesCheck(inputMas) {
+function dublicateValuesCheck(inputArray) {
   let allDublicates = true;
-  const firstValue = inputMas[0];
-  for (let i = 1; i < inputMas.length; i += 1) {
-    if (inputMas[i] !== firstValue) {
+  const firstValue = inputArray[0];
+  for (let i = 1; i < inputArray.length; i += 1) {
+    if (inputArray[i] !== firstValue) {
       allDublicates = false;
     }
   }
