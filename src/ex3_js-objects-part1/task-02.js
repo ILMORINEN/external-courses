@@ -5,6 +5,8 @@ function printPropAndVal(inputObject) {
       console.log(key, inputObject[key]);
     }
   }
+
   return null;
 }
-module.exports = printPropAndVal();
+
+module.exports = printPropAndVal;

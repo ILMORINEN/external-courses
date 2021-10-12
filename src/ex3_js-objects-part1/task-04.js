@@ -1,14 +1,12 @@
-function addPropIfMissing(inputObject, propertyName) {
-  let newObj;
-  // eslint-disable-next-line no-restricted-syntax
-  for (const objProp in inputObject) {
-    if (objProp === propertyName) {
-      Object.assign(newObj, inputObject);
-      return newObj;
-    }
+function addPropIfMissing(propertyName, inputObject) {
+  const newObj = {};
+
+  Object.assign(newObj, inputObject);
+  if (!inputObject.hasOwnProperty(propertyName)) {
+    newObj[propertyName] = 'new';
   }
-  newObj = Object.assign(newObj, inputObject);
-  newObj.propertyName = 'new';
+
   return newObj;
 }
-module.exports = addPropIfMissing();
+
+module.exports = addPropIfMissing;

@@ -1,10 +1,10 @@
-function checkProperty(inputObject, propertyName) {
+function checkProperty(propertyName, inputObject) {
   // eslint-disable-next-line no-restricted-syntax
-  for (const objProp in inputObject) {
-    if (objProp === propertyName) {
-      return true;
-    }
+  if (inputObject.hasOwnProperty(propertyName)) {
+    return true;
   }
+
   return false;
 }
-module.exports = checkProperty();
+
+module.exports = checkProperty;

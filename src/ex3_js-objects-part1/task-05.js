@@ -1,6 +1,5 @@
 function copyObject(obj) {
-  let newObj;
-  Object.assign(newObj, obj);
-  return newObj;
+  // eslint-disable-next-line prefer-object-spread
+  return Object.assign({}, obj);
 }
-module.exports = copyObject();
+module.exports = copyObject;
