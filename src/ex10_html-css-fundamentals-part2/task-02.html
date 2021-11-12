@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task-02</title>
+  </head>
+  <body>
+    <form method="get" action="http://httpbin.org/get">
+      <fieldset>
+        <legend>Personal data</legend>
+        <p>
+          <label>Surname <input type="text" name="surname" /></label>
+        </p>
+        <p>
+          <label>First Name <input type="text" name="firstName" /></label>
+        </p>
+        <p>
+          <label>Middle Name <input type="text" name="middleName" /></label>
+        </p>
+        <p>
+          You are
+          <label><input type="radio" name="sex" value="male" />male</label>
+          <label><input type="radio" name="sex" value="female" />female</label>
+        </p>
+        <p>
+          <label
+            >Age <input type="number" name="age" min="18" max="101"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Country of Residence
+            <select name="countryOfResidence"></select
+          ></label>
+        </p>
+        <p>
+          City
+          <label
+            ><input type="checkbox" name="city" value="Ryazan" />Ryazan</label
+          >
+          <label
+            ><input type="checkbox" name="city" value="Moscow" />Moscow</label
+          >
+        </p>
+        <p>
+          <label>Photography <input type="file" name="photography" /></label>
+        </p>
+        <hr />
+        <p>
+          <label>
+            Title
+            <select name="title" size="8">
+              <optgroup label="Technologies">
+                <option value="webMaster">Web Master</option>
+                <option value="databaseAdmin">Database Administrator</option>
+                <option value="computerAidDesign">Computer-aided design</option>
+              </optgroup>
+              <optgroup label="Finance">
+                <option value="economicPlanning">Economic Planning</option>
+                <option value="managamentAccording">
+                  Management according
+                </option>
+                <option value="budgetingAndPlanning">
+                  Budgeting and planning
+                </option>
+              </optgroup>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>Salary <input type="range" name="salary" /></label>
+        </p>
+        <textarea
+          placeholder="Tell us about yourself..."
+          cols="50"
+          rows="10"
+          name="aboutYourself"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <p>
+          <label>Site <input type="url" name="site" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Phone <input type="tel" name="phone" /></label>
+        </p>
+      </fieldset>
+      <p>
+        <label
+          >Password <input type="password" name="password" required
+        /></label>
+      </p>
+      <p>
+        <input type="submit" value="Отправить" />
+        <input type="reset" value="Сбросить" />
+      </p>
+    </form>
+  </body>
+</html>

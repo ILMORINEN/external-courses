@@ -1,0 +1,22 @@
+/*Оформление таблицы*/
+
+table {
+  text-align: center;
+}
+
+td {
+  height: 50px;
+  padding: 0 20px;
+}
+
+#thead td {
+  height: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #e3eaf3;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f6fa;
+}
